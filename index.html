@@ -4,7 +4,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Pantalla principal - Índice de cartas -->
         <div id="indice" class="screen active">
             <header>
                 <h1>Cartas Pokémon</h1>
@@ -39,7 +38,6 @@
             </div>
         </div>
 
-        <!-- Pantalla abrir sobre -->
         <div id="abrirSobre" class="screen">
             <header>
                 <h1>Abrir Sobre</h1>
@@ -61,7 +59,7 @@
             </div>
         </div>
 
-        <!-- Pantalla intercambio -->
+        
         <div id="intercambio" class="screen">
             <header>
                 <h1>Intercambiar Cartas</h1>
@@ -98,7 +96,7 @@
             </div>
         </div>
 
-        <!-- Menú inferior de navegación -->
+        <!-- botones de abajo -->
         <nav class="bottom-nav">
             <button class="nav-btn active" data-screen-id="indice" onclick="mostrarPantalla('indice')">
                 <span class="nav-icon">📋</span>
@@ -115,7 +113,7 @@
         </nav>
     </div>
 
-    <!-- Modal para detalles de carta -->
+    <!-- para detalles de carta -->
     <div id="cardModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="cerrarModal()">&times;</span>
@@ -123,10 +121,10 @@
         </div>
     </div>
 
-    <!-- Modal de éxito de intercambio -->
+    <!-- para el intercambio -->
     <div id="successModal" class="modal">
         <div class="modal-content success">
-            <h2>¡Intercambio completada!</h2>
+            <h2>¡Intercambio exitoso!</h2>
             <p>Las cartas han sido intercambiadas correctamente.</p>
             <button onclick="cerrarModalExito()" class="success-btn">Continuar</button>
         </div>
