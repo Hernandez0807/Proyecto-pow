@@ -1,0 +1,28 @@
+<div class="pantalla-sobre">
+    <header class="header-principal">
+        <h1>Abrir Sobre Pokémon</h1>
+    </header>
+    
+    <div class="contenedor-sobre">
+        <div id="sobreImagen" class="sobre-imagen">
+            <div class="carta-sobre">
+                <div class="sobre-frente">
+                    <h2>Sobre Pokémon</h2>
+                    <div class="pokeball-icon">⚪</div>
+                    <p>6 cartas aleatorias</p>
+                    <p class="precio">¡GRATIS!</p>
+                </div>
+            </div>
+        </div>
+        
+        <button id="botonAbrirSobre" class="boton-abrir" onclick="abrirSobre()">
+            ¡Abrir Sobre!
+        </button>
+    </div>
+    
+    <div id="contenedorNuevas" class="contenedor-nuevas" style="display: none;">
+        <h2 class="titulo-nuevas">¡Nuevas cartas obtenidas!</h2>
+        <div id="gridNuevas" class="grid-nuevas"></div>
+        <button onclick="cerrarSobre()" class="boton-continuar">Continuar</button>
+    </div>
+</div>

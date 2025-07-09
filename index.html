@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas Pokémon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Aquí se cargan las pantallas -->
+        <div id="contenidoPrincipal">
+            <!-- Se carga dinámicamente -->
+        </div>
+
+        <!-- Menú inferior fijo -->
+        <nav class="bottom-nav">
+            <button class="nav-btn active" onclick="cargarPantalla('indice')">
+                <div class="nav-icon">📋</div>
+                <div class="nav-text">Índice</div>
+            </button>
+            <button class="nav-btn" onclick="cargarPantalla('abrirsobre')">
+                <div class="nav-icon">📦</div>
+                <div class="nav-text">Abrir Sobre</div>
+            </button>
+            <button class="nav-btn" onclick="cargarPantalla('intercambio')">
+                <div class="nav-icon">🔄</div>
+                <div class="nav-text">Intercambio</div>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Modal para detalles de carta -->
+    <div id="modalCarta" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <div id="detallesCarta"></div>
+        </div>
+    </div>
+
+    <!-- Modal de éxito -->
+    <div id="modalExito" class="modal">
+        <div class="modal-content success">
+            <h2>¡Intercambio exitoso!</h2>
+            <p>Las cartas se intercambiaron correctamente</p>
+            <button onclick="cerrarModalExito()" class="btn-success">Continuar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
