@@ -1,0 +1,16 @@
+:root {
+  --color-bg-gradient: linear-gradient(to bottom right, #6b4eff, #fa5ec9);
+  --color-primary: #6b4eff;
+  --color-secondary: #fa5ec9;
+  --color-white: #fff;
+  --color-black: #333;
+  --color-card-bg: rgba(255, 255, 255, 0.15);
+  --color-card-border: #ffffff50;
+  --color-nav-bg: rgba(33, 33, 33, 0.85);
+  --color-nav-border: #ffffff30;
+  --color-nav-text: #ccc;
+  --color-nav-text-active: #fff;
+  --font-main: 'Segoe UI', sans-serif;
+  --border-radius: 1rem;
+  --input-radius: 1.2rem;
+}

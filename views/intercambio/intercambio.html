@@ -1,0 +1,51 @@
+<div class="pantalla-intercambio">
+    <header class="header-principal">
+        <h1>Intercambiar Cartas</h1>
+    </header>
+
+    <div class="estado-conexion">
+        <div class="indicador-conexion">
+            <span class="punto-conexion" id="puntoConexion"></span>
+            <span id="estadoConexion">Desconectado</span>
+        </div>
+        <button onclick="conectarIntercambio()" id="botonConectar" class="boton-conectar">
+            Conectar
+        </button>
+    </div>
+
+    <div id="interfazIntercambio" class="interfaz-intercambio" style="display: none;">
+        <div class="jugadores-conectados">
+            <div class="jugador">
+                <div class="avatar-jugador">👤</div>
+                <h3>Tú</h3>
+                <p id="miNombre">Jugador 1</p>
+            </div>
+            <div class="vs-separador">VS</div>
+            <div class="jugador">
+                <div class="avatar-jugador">👤</div>
+                <h3>Oponente</h3>
+                <p id="nombreOponente">Esperando...</p>
+            </div>
+        </div>
+
+        <div class="seccion-intercambio">
+            <div class="mis-cartas-seccion">
+                <h3>Mis cartas disponibles:</h3>
+                <div id="misCartasIntercambio" class="cartas-intercambio">
+                    <p class="mensaje-cartas">Cargando tus cartas...</p>
+                </div>
+            </div>
+
+            <div class="cartas-oponente-seccion">
+                <h3>Carta del oponente:</h3>
+                <div id="cartasOponente" class="cartas-intercambio">
+                    <p class="mensaje-cartas">El oponente no ha seleccionado carta</p>
+                </div>
+            </div>
+
+            <button id="botonIntercambiar" onclick="realizarIntercambio()" class="boton-intercambiar" disabled>
+                Intercambiar Cartas
+            </button>
+        </div>
+    </div>
+</div>

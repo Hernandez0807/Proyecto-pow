@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas Pokémon</title>
+    <link rel="stylesheet" href="../../shared/css/vars.css">
+    <link rel="stylesheet" href="../../shared/css/common.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <main id="contenidoPrincipal">
+            <section class="pantalla-indice">
+                <header class="header-principal">
+                    <h1>Mi Colección</h1>
+                    <h2 id="contadorColeccion">0/150 Pokémon</h2>
+                    <div class="buscador">
+                        <input type="text" id="searchInput" placeholder="Buscar pokémon..." class="input-buscar">
+                        <select id="typeFilter" class="select-tipo">
+                            <option value="">Todos</option>
+                            <option value="fire">Fuego</option>
+                            <option value="water">Agua</option>
+                            <option value="grass">Planta</option>
+                            <option value="electric">Eléctrico</option>
+                            <option value="psychic">Psíquico</option>
+                            <option value="ice">Hielo</option>
+                            <option value="dragon">Dragón</option>
+                            <option value="dark">Siniestro</option>
+                            <option value="fairy">Hada</option>
+                            <option value="normal">Normal</option>
+                            <option value="fighting">Lucha</option>
+                            <option value="poison">Veneno</option>
+                            <option value="ground">Tierra</option>
+                            <option value="flying">Volador</option>
+                            <option value="bug">Bicho</option>
+                            <option value="rock">Roca</option>
+                            <option value="ghost">Fantasma</option>
+                            <option value="steel">Acero</option>
+                        </select>
+                    </div>
+                </header>
+                <section class="contenedor-cartas">
+                    <div id="cardsGrid" class="grid-cartas">
+                        <p class="mensaje-carga">Cargando pokémones...</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <nav class="bottom-nav" aria-label="Navegación principal">
+            <button class="nav-btn active" onclick="window.location.href='index.html'">
+                <span class="nav-icon" aria-hidden="true">📋</span>
+                <span class="nav-text">Índice</span>
+            </button>
+            <button class="nav-btn" onclick="window.location.href='sobre.html'">
+                <span class="nav-icon" aria-hidden="true">📦</span>
+                <span class="nav-text">Abrir Sobre</span>
+            </button>
+            <button class="nav-btn" onclick="window.location.href='intercambio.html'">
+                <span class="nav-icon" aria-hidden="true">🔄</span>
+                <span class="nav-text">Intercambio</span>
+            </button>
+        </nav>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
