@@ -1,0 +1,66 @@
+<div class="container confirmation-page">
+        <header class="confirmation-header">
+            <h1>Intercambio</h1>
+            <div class="connection-status">
+                <span class="status-icon">🟢</span>
+                <span>Conectado con Ash</span>
+            </div>
+        </header>
+
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <span>🏠</span>
+                <span>Inicio</span>
+            </a>
+            <a href="intercambio.html" class="nav-item active">
+                <span>🔄</span>
+                <span>Intercambio</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span>⚡ </span>
+                <span>Indice</span>
+            </a>
+        </nav>
+
+        <main class="confirmation-main">
+            <div class="confirmation-title">
+                <h2>Confirmar Intercambio</h2>
+                <p>¿Estás seguro de realizar este intercambio?</p>
+            </div>
+
+            <div class="exchange-summary">
+                <h3>Resumen del intercambio</h3>
+                
+                <div class="exchange-preview">
+                    <div class="exchange-side">
+                        <h4>Entregas</h4>
+                        <div id="givingCards" class="summary-cards">
+                            
+                        </div>
+                    </div>
+
+                    <div class="exchange-arrow-big">
+                        <span>⬅️➡️</span>
+                    </div>
+
+                    <div class="exchange-side">
+                        <h4>Recibes</h4>
+                        <div id="receivingCards" class="summary-cards">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="confirmation-actions">
+                <button onclick="cancelExchange()" class="cancel-btn">
+                    Cancelar
+                </button>
+                <button onclick="confirmExchange()" class="confirm-btn">
+                    Confirmar
+                </button>
+            </div>
+        </main>
+    </div>
+
+    
