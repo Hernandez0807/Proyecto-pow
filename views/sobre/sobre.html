@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Sobre Pokémon</title>
+    <link rel="stylesheet" href="../../shared/css/vars.css">
+    <link rel="stylesheet" href="../../shared/css/common.css">
+    <link rel="stylesheet" href="sobre.css">
+</head>
+<body>
+    <div class="container">
+        <main id="contenidoPrincipal">
+            <section class="pantalla-sobre">
+                <header class="header-principal">
+                    <h1>Abrir Sobres</h1>
+                </header>
+
+                <div class="contenedor-sobre">
+                    <div id="sobreImagen" class="sobre-imagen">
+                        <div class="carta-sobre">
+                            <div class="sobre-frente">
+                                <h2>Pokémon</h2>
+                                <div class="pokeball-icon">⚪</div>
+                                <h3>Trading Card Game</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="botonAbrirSobre" class="boton-abrir">
+                        ¡Abrir Sobre!
+                    </button>
+                </div>
+
+                <div class="sobre-descripcion">
+                    <strong>¡Contenido del sobre!</strong>
+                    <ul>
+                        <li>6 cartas aleatorias.</li>
+                        <li>¡Posibilidad de cartas raras!</li>
+                        <li>¡Colecciónalos a todos!</li>
+                    </ul>
+                </div>
+
+                <div id="contenedorNuevas" class="contenedor-nuevas" style="display: none;">
+                    <h2 class="titulo-nuevas">¡Nuevas cartas obtenidas!</h2>
+                    <div id="gridNuevas" class="grid-nuevas"></div>
+                    <button id="botonContinuar" class="boton-continuar">Continuar</button>
+                </div>
+            </section>
+        </main>
+
+        <nav class="bottom-nav" aria-label="Navegación principal">
+            <button class="nav-btn" onclick="window.location.href='../../index.html'">
+                <span class="nav-icon" aria-hidden="true">📋</span>
+                <span class="nav-text">Índice</span>
+            </button>
+            <button class="nav-btn active" onclick="window.location.href='sobre.html'">
+                <span class="nav-icon" aria-hidden="true">📦</span>
+                <span class="nav-text">Abrir Sobre</span>
+            </button>
+            <button class="nav-btn" onclick="window.location.href='../intercambio/intercambio.html'">
+                <span class="nav-icon" aria-hidden="true">🔄</span>
+                <span class="nav-text">Intercambio</span>
+            </button>
+        </nav>
+    </div>
+
+    <div id="modalCarta" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="cerrarModalBtn">&times;</span>
+            <div id="detallesCarta"></div>
+            <p id="mensajeClic" style="margin-top:1rem;text-align:center;font-size:0.9rem;color:#777;">
+                Haz clic en la carta para mostrar la siguiente
+            </p>
+        </div>
+    </div>
+
+    <script type="module" src="sobre.js"></script>
+</body>
+</html>
